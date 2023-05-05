@@ -1,8 +1,8 @@
-## Task Management MERN Fullstack App
+# Task Management MERN Fullstack App
 
 This is a fullstack task management app developed using MERN stack. The frontend of the app is designed using React and Material UI, while the backend is developed using Express and MongoDB. The backend API URL is provided in the codebase to perform CRUD operations. The app uses Redux Toolkit for global state management.
 
-# Features
+## Features
 The app provides the following features:
 
 Add Task: Add task with title and description
@@ -10,14 +10,14 @@ Read Task: View all tasks in a table
 Update Task: Edit task title and description
 Remove Task: Delete task
 
-# Technologies Used
+## Technologies Used
 React
 Material UI
 Express
 MongoDB
 Redux Toolkit
 
-# Getting Started
+## Getting Started
 To get started with the app, follow these steps:
 
 Clone the repository
@@ -41,7 +41,7 @@ Open the app in the browser
 Copy code
 http://localhost:3000/
 
-# How to use
+## How to use
 To add a task, enter the title and description of the task in the provided form and click on the "Add Task" button.
 
 To view all tasks, navigate to Table.
