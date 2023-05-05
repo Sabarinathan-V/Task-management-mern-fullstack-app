@@ -49,3 +49,6 @@ To view all tasks, navigate to Table.
 To update a task, click on the edit icon in the table and make the necessary changes in the modal that appears.
 
 To delete a task, click on the delete icon in the table.
+
+## Deployed App
+You can access my Task management app in the following link [Task Management App](https://task-management-mern-fullstack-app.netlify.app/)
