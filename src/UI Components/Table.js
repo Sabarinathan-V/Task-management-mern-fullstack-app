@@ -36,11 +36,12 @@ const Tables = () => {
 
   // READ DATA FROM SERVER
 
-  const { tasksList, selectedTask } = useSelector((state) => state.tasks);
+  const { tasksList, selectedTask } = useSelector((state) => state.tasks); 
 
-  useEffect(() => {
-    dispatch(getTasksFromServer());
-  }, [dispatch]);
+  useEffect(()=>{
+    dispatch(getTasksFromServer())
+  }, [dispatch])
+
 
   // SELECT TASK TO UPDATE
 
@@ -60,10 +61,14 @@ const Tables = () => {
   // UPDATE SELECTED TASK
 
   const updateTask = () => {
-    dispatch(updateTaskInServer({ title, description, _id }));
-    setTitle("");
-    setDescription("");
-    setOpen(false);
+    dispatch(updateTaskInServer({ title, description, _id }))
+      .unwrap()
+      .then(()=>{
+        dispatch(getTasksFromServer())
+        setTitle("");
+        setDescription("");
+        setOpen(false);
+      })
   };
 
   // DELETE TASK
@@ -75,6 +80,8 @@ const Tables = () => {
         dispatch(removeTaskFromList(task));
       });
   };
+
+  
 
   return (
     <>

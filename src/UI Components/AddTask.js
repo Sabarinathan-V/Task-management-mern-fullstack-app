@@ -15,7 +15,8 @@ const AddTask = () => {
 
   const handleFormSubmit = (event) => {
     event.preventDefault();
-    dispatch(postTaskToServer({ title, description }));
+    if(title !== '' && description !== ''){
+    dispatch(postTaskToServer({ title, description }))};
     setTitle("");
     setDescription("");
   };
