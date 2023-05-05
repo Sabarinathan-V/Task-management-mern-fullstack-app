@@ -40,7 +40,7 @@ const Tables = () => {
 
   useEffect(() => {
     dispatch(getTasksFromServer());
-  }, [dispatch, updateTask]);
+  }, [dispatch]);
 
   // SELECT TASK TO UPDATE
 
